@@ -85,3 +85,167 @@ header img{
     background-image: url('./assets/icons/down-arrow.svg');
 }
 
+/* Seccion de Intercambio */
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.exchange{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.exchange .exchange__background{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-image: url('./assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.exchange .exchange__text{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.exchange__text h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black)
+}
+.exchange__text p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #757575;
+    line-height: 1.8rem;
+    text-align: center;
+}
+/* Tabla */
+.exchange__table--currency,
+.exchange__table--commissions{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.exchange__table--commissions{
+    display: none;
+}
+.exchange .table__title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    text-align: left;
+    margin-left: 12px;
+}
+.exchange__table--currency .table__title{
+    color: var(--bitcoin-orange);
+}
+.exchange__table--commissions .table__title{
+    color: var(--secondary-blue);
+}
+.exchange .table__container{
+    position: relative;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+}
+.exchange table{
+    width: 100%;
+}
+.exchange td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+    height: 40px;
+}
+
+.exchange .table--top-left{
+    border-radius: 8px 0 0 0;
+}
+.exchange .table--top-right{
+    border-radius: 0 8px 0 0;
+}
+.exchange .table--bottom-left{
+    border-radius: 0 0 0 8px;
+}
+.exchange .table--bottom-right{
+    border-radius: 0 0 8px 0;
+}
+.exchange .table--right{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.exchange table span{
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.exchange table .down{
+    background-image: url('./assets/icons/trending-down.svg');
+}
+.exchange table .up{
+    background-image: url('./assets/icons/trending-up.svg');
+}
+.exchange .table__information{
+    width: 173px;
+    height: 31px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.exchange .table__information p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
+.exchange__table--currency .table__information{
+    background-color: var(--soft-orange);
+}
+.exchange__table--currency .table__arrow-right,
+.exchange__table--commissions .table__arrow-left{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31%;
+    cursor: pointer;
+}
+.exchange__table--currency .table__arrow-right{
+    background-image: url("./assets/icons/arrow-right.svg");
+    right: -25px;
+}
+.exchange__table--commissions .table__arrow-left{
+    background-image: url("./assets/icons/arrow-left.svg");
+    left: -25px;
+}
+.exchange__table--commissions .table__information{
+    background-color: var(--soft-blue);
+}
