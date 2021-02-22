@@ -4,7 +4,7 @@
     --secondary-blue: #1a9af7;
     --soft-blue: #e7f5ff;
     --warm-black: #201E1C;
-    --black: ##282623;
+    --black: #282623;
     --grey: #bababa;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
@@ -135,7 +135,7 @@ main{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: 300px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -248,4 +248,86 @@ main{
 }
 .exchange__table--commissions .table__information{
     background-color: var(--soft-blue);
+}
+/* Seccion de beneficios */
+.benefit{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+.benefit__icon{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background-image: url("./assets/icons/batata.svg");
+    top: -10px;
+    left: calc(50% - 20px)
+}
+.benefit__text{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+}
+.benefit__text h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+.benefit__text p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product__card{
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    margin: 15px auto;
+    height: 150px;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product__card span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product__icon--clock{
+    background-image: url("./assets/icons/clock.svg");
+}
+.product__icon--eye{
+    background-image: url("./assets/icons/eye.svg");
+}
+.product__icon--dolar{
+    background-image: url("./assets/icons/dollar-sign.svg");
+}
+.product__icon--check{
+    background-image: url("./assets/icons/check-circle.svg");
+}
+.product__title{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product__body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
