@@ -331,3 +331,127 @@ main{
     line-height: 1.8rem;
     color: #808080;
 }
+
+/* Seccion comodin (imagen) */
+.bitcoin__image{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./assets/img/bitcoinbaby2x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin__image h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+/* Seccion planes */
+.plans{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans__text{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans__text h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.plans__text p{
+    padding-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans__container{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans__target{
+    position: relative;
+    scroll-snap-align: center;
+    width: 69%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 8px 0;
+    padding: 0px 15px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans__recommend{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    top: -15px;
+    left: calc(50% - 60px);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 8px;
+}
+.plans__content h3{ 
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.plans__price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: black;
+}
+.plans__price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+}
+.plans__saving{
+    color: #757575;
+    font-size: 1.2rem;
+}
+.plans__action{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    font-family: 'DM Sans', sans-serif;
+}
+.plans__action span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
