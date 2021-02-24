@@ -130,18 +130,24 @@ main{
     text-align: center;
 }
 /* Tabla */
+.exchange__table{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .exchange__table--currency,
 .exchange__table--commissions{
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 300px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
-.exchange__table--commissions{
-    display: none;
-}
+
 .exchange .table__title{
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -238,14 +244,14 @@ main{
     top: 31%;
     cursor: pointer;
 }
-.exchange__table--currency .table__arrow-right{
+/* .exchange__table--currency .table__arrow-right{
     background-image: url("./assets/icons/arrow-right.svg");
     right: -25px;
 }
 .exchange__table--commissions .table__arrow-left{
     background-image: url("./assets/icons/arrow-left.svg");
     left: -25px;
-}
+} */
 .exchange__table--commissions .table__information{
     background-color: var(--soft-blue);
 }
@@ -454,4 +460,31 @@ main{
     height: 20px;
     background-image: url("./assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
+}
+/* Footer */
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.footer__left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.footer__left li{
+    margin: 10px 0;
+}
+.footer__left a{
+    text-decoration: none;
+    color: var(--just-white);
 }
