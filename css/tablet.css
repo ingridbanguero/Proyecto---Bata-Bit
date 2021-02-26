@@ -1,0 +1,22 @@
+.plans__container{
+    justify-content: center;
+}
+
+.exchange__table{
+    max-width: 685px;
+}
+.exchange__table--commissions{
+    display: block;
+}
+.exchange__table--currency .table__arrow-right{
+    display: none;
+}
+.exchange__table--commissions .table__arrow-left{
+    display: none;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 930px;
+    margin: 0 auto;
+}

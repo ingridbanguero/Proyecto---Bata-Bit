@@ -132,10 +132,8 @@ main{
 /* Tabla */
 .exchange__table{
     display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    max-width: 345px;
+    margin: 0px auto;
 }
 .exchange__table--currency,
 .exchange__table--commissions{
@@ -147,7 +145,9 @@ main{
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
-
+.exchange__table--commissions{
+    display: none;
+}
 .exchange .table__title{
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -168,6 +168,7 @@ main{
     min-width: 230px;
     max-width: 300px;
     height: 250px;
+    margin: 0px auto;
 }
 .exchange table{
     width: 100%;
@@ -244,14 +245,14 @@ main{
     top: 31%;
     cursor: pointer;
 }
-/* .exchange__table--currency .table__arrow-right{
+.exchange__table--currency .table__arrow-right{
     background-image: url("./assets/icons/arrow-right.svg");
     right: -25px;
 }
 .exchange__table--commissions .table__arrow-left{
     background-image: url("./assets/icons/arrow-left.svg");
     left: -25px;
-} */
+}
 .exchange__table--commissions .table__information{
     background-color: var(--soft-blue);
 }
@@ -488,3 +489,4 @@ footer section{
     text-decoration: none;
     color: var(--just-white);
 }
+
